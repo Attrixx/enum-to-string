@@ -11,7 +11,7 @@ Simply import the file `enum_to_string.h` in your project and include it. You ca
 
 ### How to use
 
-You can either call `enum_to_string(enum::value)` or `<< enum::value`, both return a `std::string_view`
+You can either call `enum_to_string(enum::value)` which returns a `std::string_view` or `osteam << enum::value` for outputs.
 
 ## Limits
 
