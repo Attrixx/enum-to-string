@@ -22,5 +22,5 @@ int main()
 
 	// Displaying enum variables
 	Color currentColor = Color::Blue;
-    std::cout << "Current color value is " << currentColor << std::endl;
+	std::cout << "Current color value is " << currentColor << std::endl;
 }
