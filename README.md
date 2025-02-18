@@ -1,6 +1,6 @@
 # C++ enum-to-string
 
-Easy way to convert enums to string. All operations are done in compile time, so it does not cost any runtime performance.
+Easy way to convert enums to strings. All operations are done in compile time, so it does not cost any runtime performance.
 It is compatible with MSVC (Visual Studio), GCC & clang. C++ 20 is required to compile this file since it uses concepts.
 
 ## Integration
