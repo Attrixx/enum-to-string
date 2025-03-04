@@ -24,4 +24,9 @@ int main()
 	// Displaying enum variables
 	Color currentColor = Color::Blue;
 	std::cout << "Current color value is " << currentColor << std::endl;
+
+	// Convert strings to enums
+	auto colorOption = string_to_enum<Color>("Green");
+	if (!colorOption.has_value()) return 1; // Ensure the provided string exists in the enum. It is recommended to assert if you use this.
+	Color newColor = *colorOption; // The value of this variable is Color::Green.	
 }
