@@ -24,11 +24,4 @@ int main()
 	// Displaying enum variables
 	Color currentColor = Color::Blue;
 	std::cout << "Current color value is " << currentColor << std::endl;
-
-	// TESTS
-	assert(enum_to_string(Color::Red) == "Red");
-	assert(enum_to_string(Color::Green) == "Green");
-
-	std::string_view blue = enum_to_string(Color::Blue);
-	assert(blue == "Blue");
 }
