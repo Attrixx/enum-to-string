@@ -1,5 +1,7 @@
 # C++ enum-to-string
 
+![CI](https://github.com/Attrixx/enum-to-string/actions/workflows/cmake-multi-platform.yml/badge.svg)
+
 Easy way to convert enums to strings. All operations are done in compile time, so it does not cost any runtime performance.
 It is compatible with MSVC (Visual Studio), GCC & clang. C++ 20 is required to compile this file since it uses concepts.
 
