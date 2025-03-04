@@ -13,7 +13,12 @@ Simply import the file `enum_to_string.h` in your project and include it. You ca
 
 ### How to use
 
-You can either call `enum_to_string(enum::value)` which returns a `std::string_view` or `std::osteam << enum::value` for outputs.
+- **Enum to String**:  
+  You can call `enum_to_string(enum::value)`, which returns a `std::string_view`, or use `std::ostream << enum::value` for output streaming.
+
+- **String to Enum**:  
+  Use `string_to_enum<Enum>(string)`, which returns a `std::optional<Enum>`. It is your responsibility to verify that the provided `std::string_view` corresponds to a valid enum value.  
+  It is recommended to use assertions for this check. Once validated, you can retrieve the enum value by dereferencing the optional.
 
 ## Limits
 
