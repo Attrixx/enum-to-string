@@ -7,3 +7,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_executable(EnumToStringExample example.cpp)
 
 target_include_directories(EnumToStringExample PRIVATE ./)
+
+enable_testing()
+add_subdirectory(tests)
