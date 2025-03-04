@@ -2,6 +2,7 @@
 
 #include <array>
 #include <iostream>
+#include <optional>
 #include <string_view>
 
 template<typename T>
@@ -56,6 +57,19 @@ inline constexpr std::string_view enum_to_string(T value)
         }
     }
     return std::string_view();
+}
+
+template <enumeration T>
+inline constexpr std::optional<T> string_to_enum(std::string_view str)
+{
+    for (const auto& [enum_value, enum_str] : enum_traits<T>::values)
+    {
+        if (enum_str == str)
+        {
+            return enum_value;
+        }
+    }
+    return std::nullopt;
 }
 
 template<enumeration T>
